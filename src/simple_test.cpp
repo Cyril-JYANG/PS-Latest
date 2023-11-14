@@ -44,4 +44,4 @@ TEST(ZeroInitialConditionsTest, MathematicallyCorrect) {
     //    }
     //}
 }
-// TEST END
+// TEST END.
