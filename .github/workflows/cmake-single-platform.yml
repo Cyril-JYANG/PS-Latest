@@ -23,7 +23,8 @@ jobs:
     - uses: actions/checkout@v3
       with:
         submodules: third/googletest
-
+# Since the Googletest placed in the repo is a submodule, Googletest won't be downloaded when the repo be cloned. Add the
+# following lines to download Googletest again, so that can be run test on the virtual machine.
     - name: submoudles
       run: |
         cd ${{github.workspace}}/third
@@ -42,5 +43,5 @@ jobs:
       # Execute tests defined by the CMake configuration.
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ${{github.workspace}}/build/src/MY_TEST
-
+# Run our own test instead of the test in the template.
 
