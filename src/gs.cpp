@@ -19,8 +19,8 @@ const int numIterations = 10000;
 const int outputInterval =  100;      // Output every 1000 iterations
 
 // Initialize grid and constants
-std::vector<std::vector<double>> u(width, std::vector<double>(height, 1.0));
-std::vector<std::vector<double>> v(width, std::vector<double>(height, 0.0));
+std::vector<std::vector<double> > u(width, std::vector<double>(height, 1.0));
+std::vector<std::vector<double> > v(width, std::vector<double>(height, 0.0));
 
 // initialization function
 void init() {
@@ -70,8 +70,8 @@ void writeVTKFile(int iteration) {
 // Function to perform one time step of the simulation
 void simulateStep() {
 
-    std::vector<std::vector<double>> nextU = u;
-    std::vector<std::vector<double>> nextV = v;
+    std::vector<std::vector<double> > nextU = u;
+    std::vector<std::vector<double> > nextV = v;
 
     double laplaceU = 0.0, laplaceV = 0.0, dU = 0.0, dV = 0.0;
     double a, b;
