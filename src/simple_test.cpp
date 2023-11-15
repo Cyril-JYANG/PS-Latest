@@ -10,7 +10,7 @@ extern double countElementsAboveThreshold(double threshold);
 TEST(ModelParameterTypeTest, TypeMatch) {
 	// F and k should have the same type as the elements of u and v vectors
 	ASSERT_EQ(typeid(F).name(), typeid(u[0][0]).name());
-	ASSERT_EQ(typeid(k).name(), typeid(u[0][0]).name());
+	ASSERT_EQ(typeid(k).name(), typeid(v[0][0]).name());
 }
 
 // Test case 0.2: Check that the variables u and v are the same size.
