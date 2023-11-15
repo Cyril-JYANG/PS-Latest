@@ -1,14 +1,14 @@
-# Gray-scott-sim
+# Gray-scott-sim Professional Skills Coursework 1
 
 ## What can our program do?
 
 ## Contributors
-
+Jiahao Yang, Ruibo Gai, Tianchen Yan, Zijun Zhang
 ## Directory structure
 
 ```
-filetree 
-├── /build/
+filetree
+├── .gtihub/workflows
 ├── /src/
 │  ├── CMakeLists.txt
 │  ├── gs.cpp
