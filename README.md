@@ -1,4 +1,5 @@
 # Gray-scott-sim Professional Skills Coursework 1
+## The Gray-Scott Model
 The Gray-Scott model is a mathematical model used to describe pattern formation in chemical reaction-diffusion systems. This model is commonly employed to simulate the interaction between two reacting substances, where one substance is converted into another. Initially used to describe spot formation on the skin of zebrafish, the Gray-Scott model has found applications in various fields.
 
 Here's a brief overview of the basic equations of the Gray-Scott model:
@@ -21,15 +22,42 @@ Visualization techniques, such as plotting concentration maps or using three-dim
 
 ![image](https://github.com/Cyril-JYANG/PS-Latest/blob/main/Img-Folder/unnamed.png)
 
-## What can our program do?
+## Prerequisites
+C++ compiler
+
+CMake
+
+Googletest (for testing)
+
+## Simulation Parameters
+width: Width of the grid (default: 256)
+height: Height of the grid (default: 256)
+Du: Diffusion rate of U (default: 0.14)
+Dv: Diffusion rate of V (default: 0.07)
+F: Feed rate (default: 0.03)
+k: Kill rate (default: 0.0648)
+threshold: Threshold value (default: 0.1)
+dt: Time step (default: 0.06)
+numIterations: Number of iterations for the simulation (default: 10000)
+outputInterval: Output every nth iteration (default: 100)
+
+
+## Program Uesage
 This program is mainly to check the validity of parameter u and v. Whether we can get mathematically correct answer from this model would be tested as well.
+### Test Cases
+ModelParameterTypeTest: Check that the types of model parameters (F, k) match the element type of the u and v vectors.
+GridSizeTest: Check that the variables u and v are of the same size.
+ZeroInitialConditionsTest: Check that the simulation produces the correct result when u = 0 and v = 0.
+
 ## Contributors
-Jiahao Yang, Ruibo Gai, Tianchen Yan, Zijun Zhang
+Ruibo Gai, Tianchen Yan, Jiahao Yang, Zijun Zhang
 ## Directory structure
 
 ```
-filetree
-├── .gtihub/workflows
+main filetree
+├── /.gtihub/workflows/
+│  ├── cmake-single-platform.yml
+├── /lmg-Folder
 ├── /src/
 │  ├── CMakeLists.txt
 │  ├── gs.cpp
