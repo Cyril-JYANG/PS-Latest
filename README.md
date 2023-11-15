@@ -31,14 +31,23 @@ Googletest (for testing)
 
 ## Simulation Parameters
 width: Width of the grid (default: 256)
+
 height: Height of the grid (default: 256)
+
 Du: Diffusion rate of U (default: 0.14)
+
 Dv: Diffusion rate of V (default: 0.07)
+
 F: Feed rate (default: 0.03)
+
 k: Kill rate (default: 0.0648)
+
 threshold: Threshold value (default: 0.1)
+
 dt: Time step (default: 0.06)
+
 numIterations: Number of iterations for the simulation (default: 10000)
+
 outputInterval: Output every nth iteration (default: 100)
 
 
@@ -46,7 +55,9 @@ outputInterval: Output every nth iteration (default: 100)
 This program is mainly to check the validity of parameter u and v. Whether we can get mathematically correct answer from this model would be tested as well.
 ### Test Cases
 ModelParameterTypeTest: Check that the types of model parameters (F, k) match the element type of the u and v vectors.
+
 GridSizeTest: Check that the variables u and v are of the same size.
+
 ZeroInitialConditionsTest: Check that the simulation produces the correct result when u = 0 and v = 0.
 
 ## Contributors
