@@ -51,15 +51,6 @@ numIterations: Number of iterations for the simulation (default: 10000)
 outputInterval: Output every nth iteration (default: 100)
 
 
-## Program Uesage
-This program is mainly to check the validity of parameter u and v. Whether we can get mathematically correct answer from this model would be tested as well.
-### Test Cases
-ModelParameterTypeTest: Check that the types of model parameters (F, k) match the element type of the u and v vectors.
-
-GridSizeTest: Check that the variables u and v are of the same size.
-
-ZeroInitialConditionsTest: Check that the simulation produces the correct result when u = 0 and v = 0.
-
 ## Contributors
 Ruibo Gai, Tianchen Yan, Jiahao Yang, Zijun Zhang
 ## Directory structure
@@ -78,13 +69,13 @@ main filetree
 └── README.md
 ```
 
-## How to build and use this program?
+## To Use
 Pull it down and run!
-### Tests Overview
-
+## Tests Overview
+This program is mainly to check the validity of parameter u and v. Whether we can get mathematically correct answer from this model would be tested as well.
 ### Model Parameter Type Matching Test (ModelParameterTypeTest)
 
-This test verifies the compatibility of variable types between the model parameters (F, k) and the elements within the grid vectors (u, v).
+This test verifies the compatibility of variable types between the model parameters (F, k) and the elements within the grid vectors (u, v). Whether we can get mathematically correct answer from this model would be tested as well.
 
 Verification: Compares the types using typeid to ensure F, k types match the types of elements within u and v.
 
