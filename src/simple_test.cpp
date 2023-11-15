@@ -1,6 +1,5 @@
 #include <gtest/gtest.h>
 #include <typeinfo>
-//#include "gs.cpp"  // Include the source file for testing
 extern double F, k, threshold;
 extern std::vector<std::vector<double>> u, v;
 const int width = 256;                // Width of the grid
@@ -33,15 +32,7 @@ TEST(ZeroInitialConditionsTest, MathematicallyCorrect) {
 	// Run one simulation step
 	simulateStep();
 
-	// Check that all elements in u and v remain zero after one step
-	//for (int x = 0; x < width; ++x) {
-	//    for (int y = 0; y < height; ++y) {
-	//        std::cout << u[x][y]<<" " <<v[x][y]<< std::endl;
-	//ASSERT_DOUBLE_EQ(u[width-1][height-1], 0);
-	//ASSERT_DOUBLE_EQ(v[width-1][height-1], 0);
 	double re = countElementsAboveThreshold(threshold);
-	ASSERT_DOUBLE_EQ(0.0, re);//countElementsAboveThreshold(threshold)
-	//    }
-	//}
+	ASSERT_DOUBLE_EQ(0.0, re);
 }
 // TEST END..
