@@ -35,4 +35,4 @@ TEST(ZeroInitialConditionsTest, MathematicallyCorrect) {
 	double re = countElementsAboveThreshold(threshold);
 	ASSERT_DOUBLE_EQ(0.0, re);
 }
-// TEST END..
+// TEST END.
