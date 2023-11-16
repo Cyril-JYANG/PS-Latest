@@ -69,7 +69,7 @@ main filetree
 └── README.md
 ```
 
-## To Use
+## How To Use
 Pull it down and run!
 ## Tests Overview
 This program is mainly to check the validity of parameter u and v. Whether we can get mathematically correct answer from this model would be tested as well.
